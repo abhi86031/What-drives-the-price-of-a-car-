@@ -1,6 +1,19 @@
 # What-drives-the-price-of-a-car-
 The task at hand is to identify key drivers for used car prices; analyse the data and recommend used car dealerships as to what consumers value in a used car. 
 
+#The dataset contains 18 columns and 426,880 entries.
+    #As evident from above, some features will have minimal influence on a vehicle's overall cost, while others significantly impact how the vehicles value is determined.
+    #The columns likely to have no effect on overall cost are 'Id' & 'VIN'.
+    #Factors like humidity, rain and heat vary in every 'region' & 'state' and may contribute to depreciation, but can be suitably covered in 'condition'.
+    #'Year', 'Manufacturer', 'Condition' and other such factors are more likley to have significant impact.
+
+# The dataset has numerous null, zero value and repeat entries. Hence, the same needs to be cleaned and modelled.
+
+# Multiple models including following were used:-
+     # Linear Regression
+    # Lasso Regression with GridSearchCV
+    # Ridge Regression with GridSearchCV
+    
 #Summary of Model Performances
 
     #Train MSE for Linear, Lasso & Ridge models are 1.1511, 1.1586 & 1.1510 respectively
